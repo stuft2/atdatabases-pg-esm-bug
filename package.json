@@ -1,0 +1,27 @@
+{
+  "name": "atdatabases-pg-esm-bug",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "build": "npx rimraf dist types && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@databases/pg": "^5.4.1"
+  },
+  "devDependencies": {
+    "@tsconfig/esm": "^1.0.3",
+    "typescript": "^5.0.4"
+  }
+}
